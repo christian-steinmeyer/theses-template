@@ -9,6 +9,7 @@
 *.fmt
 
 ## Intermediate documents:
+main.pdf
 *.dvi
 *-converted-to.*
 # these rules might exclude image files for figures etc.
