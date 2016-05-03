@@ -27,3 +27,7 @@ including these files below.
 Feel free to configure listings, e.g. for other languages under 
 [listings](config/listings.tex). Layout changes can be made in [layout](config/layout.tex). Add
 packages to [packages](config/packages.tex). Add new commands to [commands](config/commands.tex).
+
+## Examples
+
+[Here](build/thesis-template.pdf), you can find a built example PDF. And [here](build/thesis-template-alternative.pdf) is an alternative title page with two logos instead of one (e.g. one for the university and one for the chair). 
