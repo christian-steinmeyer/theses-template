@@ -1,0 +1,24 @@
+\renewcommand{\maketitle}{
+  \begin{titlepage}
+  \centering
+  	% header
+    \logo{\theuniversitylogofilename}
+    {\Large \theinstitute}\\[6pt]
+    \thechair
+    
+    % middle
+    \vfill
+    \thetitlelabel:\\[12pt]
+    {\Huge \thetitle}\\[12pt]
+    {\Large \thesubtitle}
+    \vfill
+    
+    % footer
+    \theauthorlabel:\\
+    {\Large \theauthor \\[6pt]}
+    \theauthoridlabel: \theauthorid \\
+    \theauthoremail\\[18pt]
+    {\large \theadvisorlabel: \theadvisor\\[6pt]}
+    \thecity, \today
+  \end{titlepage}
+}

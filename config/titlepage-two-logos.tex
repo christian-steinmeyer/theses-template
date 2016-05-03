@@ -1,0 +1,36 @@
+\renewcommand{\maketitle}{
+  \begin{titlepage}
+  \centering
+  	% header
+    \begin{minipage}{\textwidth}
+      \begin{minipage}{3cm}
+        \includegraphics[height=26mm]{images/\theuniversitylogofilename}
+      \end{minipage}
+      \hfill
+      \begin{minipage}{9cm}
+        \centering
+        {\Large \theinstitute}\\[12pt]
+        \thechair
+      \end{minipage}
+      \hfill
+      \begin{minipage}{3cm}
+        \includegraphics[height=26mm]{images/\thechairlogofilename}
+      \end{minipage}
+    \end{minipage}
+    
+    % middle
+    \vfill
+    \thetitlelabel:\\[24pt]
+    {\Huge \thetitle}\\[12pt]
+    {\Large \thesubtitle}
+    \vfill
+    
+    % footer
+    \theauthorlabel:\\
+    {\Large \theauthor \\[6pt]}
+    \theauthoridlabel: \theauthorid \\
+    \theauthoremail\\[18pt]
+    {\large \theadvisorlabel: \theadvisor\\[6pt]}
+    \thecity, \today
+  \end{titlepage}
+}

@@ -1,0 +1,58 @@
+% colors
+\usepackage[dvipsnames]{xcolor}
+% listings
+\usepackage{listings}
+% monokai
+% \definecolor{javabackground}{rgb}{0.153,0.156,0.133} % background
+% \definecolor{javatext}{rgb}{0.972,0.972,0.941} % text
+% \definecolor{javakeywords}{rgb}{0.976,0.149,0.564} % keywords
+% \definecolor{javastrings}{rgb}{0.650,0.886,0.180} % strings
+% \definecolor{javacomments}{rgb}{0.458,0.443,0.368} % comments
+% \definecolor{javadoc}{rgb}{0.431,0.788,0.866} % javadoc
+
+% eclipse standard
+\definecolor{javabackground}{rgb}{0.941,0.933,0.937} % background
+\definecolor{javatext}{rgb}{0.153,0.156,0.133} % text
+\definecolor{javakeywords}{rgb}{0.5,0,0.35} % keywords
+\definecolor{javastrings}{rgb}{0.6,0,0} % strings
+\definecolor{javacomments}{rgb}{0.25,0.5,0.35} % comments
+\definecolor{javadoc}{rgb}{0.25,0.35,0.75} % javadoc
+% Configuration
+\lstdefinestyle{javaStyle}{%
+  language=Java,%
+  basicstyle=\color{javatext}\footnotesize,%
+  backgroundcolor=\color{javabackground},%
+  keywordstyle=\color{javakeywords},
+  stringstyle=\color{javastrings},
+  commentstyle=\color{javacomments},
+  morecomment=[s][\color{javadoc}]{/**}{*/},
+  showstringspaces=false,%
+  numbers=left,%
+  numberstyle=\tiny,%
+  tabsize=4,%
+  stepnumber=1,%
+  numbersep=1em,%
+  extendedchars=false,%
+  xleftmargin=2em,%
+  framexleftmargin=2em,%
+  xrightmargin=0em,%
+  breaklines%
+}
+% Java-Sourcecode environment
+% #1 = Caption
+% #2 = Label
+\lstnewenvironment{javacode}[2]%
+{\lstset{style=javaStyle,caption=#1,label=#2}}
+{}
+
+% Include code from Java-file
+% #1 = Filename relative to section-folder
+% #2 = Caption
+% #3 = Label
+%
+\newcommand{\javafile}[2]{%
+   \lstinputlisting[%
+     caption={#2},%
+     label={#1},%
+     style=javaStyle]{resources/#1.java}%
+}

@@ -1,0 +1,22 @@
+% Page-Layout
+\setlength\headheight{14pt}
+\setlength\topmargin{-15,4mm}
+\setlength\oddsidemargin{-0,4mm}
+\setlength\evensidemargin{-0,4mm}
+\setlength\textwidth{160mm}
+\setlength\textheight{252mm}
+
+% Absatzeinstellungen
+\setlength\parindent{0mm}
+\setlength\parskip{2ex}
+
+% setzen nur von fusszeile
+\newcommand{\setbottom}{
+  \pagestyle{fancy}
+  \fancyhf{}
+  \fancyfoot[LO]{\footnotesize\sc}
+  \fancyfoot[L]{\leftmark}
+  \fancyfoot[R]{\thepage}
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0pt}
+}

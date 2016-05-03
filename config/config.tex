@@ -1,0 +1,33 @@
+\RequirePackage{ifpdf}
+\ifpdf
+	\documentclass[pdftex, a4paper, 12pt]{article}
+\else
+	\documentclass[a4paper, 12pt]{article}
+\fi
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage[T1]{fontenc}
+\usepackage{ae}
+\usepackage{color}
+\usepackage[printonlyused]{acronym}
+
+\ifpdf
+	\usepackage[pdftex]{graphicx}
+	\pdfcompresslevel=9
+\else
+	\usepackage[dvips]{graphicx}
+\fi
+
+% long error messages
+\errorcontextlines=999
+
+\input{config/commands}
+\input{config/layout}
+\input{config/variables}
+\input{config/titlepage-one-logo}
+%\input{config/titlepage-two-logos}
+\input{config/listings}
+\input{config/packages}
+
+\title{\thetitle}
+\author{\theauthor}
