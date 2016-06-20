@@ -1,38 +1,42 @@
-%better font, similar to the default springer font
-%cfr-lm is preferred over lmodern. Reasoning at http://tex.stackexchange.com/a/247543/9075
-\usepackage[%
-  rm={oldstyle=false,proportional=true},%
-  sf={oldstyle=false,proportional=true},%
-  tt={oldstyle=false,proportional=true,variable=true},%
-  qt=false%
+% remove both for IEEE citation styles, see also src/appendix
+\usepackage[authoryear,square]{natbib}
+\renewcommand{\cite}{\citep}
+
+% better font, similar to the default springer font
+% cfr-lm is preferred over lmodern. Reasoning at http://tex.stackexchange.com/a/247543/9075
+\usepackage[% 
+  rm={oldstyle=false,proportional=true},% 
+  sf={oldstyle=false,proportional=true},% 
+  tt={oldstyle=false,proportional=true,variable=true},% 
+  qt=false% 
 ]{cfr-lm}
 
 
-%extended enumerate, such as \begin{compactenum}
+% extended enumerate, such as \begin{compactenum}
 \usepackage{paralist}
 
-%for easy quotations: \enquote{text}
+% for easy quotations: \enquote{text}
 \usepackage{csquotes}
 
-%tweak \url{...}
+% tweak \url{...}
 \usepackage{url}
-  %nicer // - solution by http://tex.stackexchange.com/a/98470/9075
+  % nicer // - solution by http://tex.stackexchange.com/a/98470/9075
   \makeatletter
   \def\Url@twoslashes{\mathchar`\/\@ifnextchar/{\kern-.2em}{}}
   \g@addto@macro\UrlSpecials{\do\/{\Url@twoslashes}}
   \makeatother
   \urlstyle{same}
-  %improve wrapping of URLs - hint by http://tex.stackexchange.com/a/10419/9075
+  % improve wrapping of URLs - hint by http://tex.stackexchange.com/a/10419/9075
   \makeatletter
   \g@addto@macro{\UrlBreaks}{\UrlOrds}
   \makeatother
 
-%enable hyperref without colors and without bookmarks
+% enable hyperref without colors and without bookmarks
 \usepackage[
-  %pdfauthor={\theauthor},
-  %pdfsubject={},
-  %pdftitle={\thetitle},
-  %pdfkeywords={},
+  % pdfauthor={\theauthor},
+  % pdfsubject={},
+  % pdftitle={\thetitle},
+  % pdfkeywords={},
   bookmarks=false,
   breaklinks=true,
   colorlinks=true,
@@ -43,9 +47,9 @@
   pdfstartview=Fit
 ]{hyperref}
 
-%enable \cref{...} and \Cref{...} instead of \ref: Type of reference included in the link
+% enable \cref{...} and \Cref{...} instead of \ref: Type of reference included in the link
 \usepackage[capitalise,nameinlink]{cleveref}
-  %Nice formats for \cref
+  % Nice formats for \cref
   \crefname{section}{Sect.}{Sect.}
   \Crefname{section}{Section}{Sections}
   \crefname{figure}{Fig.}{Fig.}
