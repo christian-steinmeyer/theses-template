@@ -109,30 +109,30 @@
           \begin{subfigure}[a]{0.32\textwidth}
      	 	  \centering
               \includegraphics[scale=1, max height=\textheight, max width=\textwidth, \thedraft]{./images/#1}
-              \caption{#2} \label{img:#1}
+              \caption{#2} \label{fig:#1}
           \end{subfigure}
           \begin{subfigure}[a]{0.32\textwidth}
       		  \centering
               \includegraphics[scale=0.7, max height=\textheight, max width=\textwidth, \thedraft]{./images/#3}
-              \caption{#4} \label{img:#3}
+              \caption{#4} \label{fig:#3}
           \end{subfigure}
           \begin{subfigure}[a]{0.32\textwidth}
          	  \centering
               \includegraphics[scale=0.7, max height=\textheight, max width=\textwidth, \thedraft]{./images/#5}
-              \caption{#6} \label{img:#5}
+              \caption{#6} \label{fig:#5}
           \end{subfigure}
           \caption{#7}
   \end{figure}
 }
 
 % Include a rotated image
-% (label for referencing = img:#1)
+% (label for referencing = fig:#1)
 % #1 Filename (without file ending relative to image-directory)
 % #2 Caption
 \providecommand{\rotatedImage}[2]{
   \begin{sidewaysfigure}
       \centering
       \includegraphics[scale=1, max height=\textwidth, max width=\textheight, \thedraft]{./images/#1}
-      \caption{#2} \label{img:#1}
+      \caption{#2} \label{fig:#1}
   \end{sidewaysfigure}
 }
