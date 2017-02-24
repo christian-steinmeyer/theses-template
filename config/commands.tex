@@ -12,14 +12,66 @@
 	\end{figure}
 }
 
+% Include an image (label for referencing = img:#1)
+% #1 Filename (without file ending relative to image-directory)
+% #2 Caption
 \providecommand{\image}[2]{
 	\begin{figure}
       \centering
       \includegraphics[scale=1, max height=\textheight, max width=\textwidth, \thedraft]{./images/#1}
-      \caption{#2} \label{fig:#1}
+      \caption{#2} \label{img:#1}
 	\end{figure}
 }
 
+% Include an image from PDF
+% (label for referencing = img:#1)
+% #1 Filename (without file ending relative to image-directory)
+% #2 Caption
+% #3 PDF-Page to include
+\newcommand{\imagepdf}[3]{%
+	\begin{figure}[htb]%
+		\centering%
+		\includegraphics[scale=1, max height=\textheight, max width=\textwidth, page=#3, \thedraft]{./images/#1}%
+		~\\[-0.25cm]
+		\caption{#2}%
+		%		~\\[-0.65cm]
+		\label{img:#1}%
+	\end{figure}%
+}
+
+
+% Include an image with fixed width
+% (label for referencing = img:#1)
+% #1 Filename (without file ending relative to image-directory)
+% #2 Caption
+% #3 Width in document in cm
+\newcommand{\imagew}[3]{%
+  \begin{figure}[htb]%
+    \centering%
+    \includegraphics[width=#3cm, \thedraft]{./images/#1}%
+    ~\\[-0.25cm]
+    \caption{#2}%
+%		~\\[-0.65cm]
+    \label{img:#1}%
+  \end{figure}%
+}
+
+% Include an image from PDF with fixed width
+% (label for referencing = img:#1)
+% #1 Filename (without file ending relative to image-directory)
+% #2 Caption
+% #3 Width in document in cm
+% #4 PDF-Page to include
+\newcommand{\imagepdfw}[4]{%
+	\begin{figure}[htb]%
+		\centering%
+		\includegraphics[width=#3cm,page=#4, \thedraft]{./images/#1}%
+		~\\[-0.25cm]
+		\caption{#2}%
+		%		~\\[-0.65cm]
+		\label{img:#1}%
+	\end{figure}%
+}
 
 \providecommand{\doubleImages}[4]{
   \begin{figure}
