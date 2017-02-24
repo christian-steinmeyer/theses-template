@@ -12,19 +12,19 @@
 	\end{figure}
 }
 
-% Include an image (label for referencing = img:#1)
+% Include an image (label for referencing = fig:#1)
 % #1 Filename (without file ending relative to image-directory)
 % #2 Caption
 \providecommand{\image}[2]{
 	\begin{figure}
       \centering
       \includegraphics[scale=1, max height=\textheight, max width=\textwidth, \thedraft]{./images/#1}
-      \caption{#2} \label{img:#1}
+      \caption{#2} \label{fig:#1}
 	\end{figure}
 }
 
 % Include an image from PDF
-% (label for referencing = img:#1)
+% (label for referencing = fig:#1)
 % #1 Filename (without file ending relative to image-directory)
 % #2 Caption
 % #3 PDF-Page to include
@@ -35,13 +35,12 @@
 		~\\[-0.25cm]
 		\caption{#2}%
 		%		~\\[-0.65cm]
-		\label{img:#1}%
+		\label{fig:#1}%
 	\end{figure}%
 }
 
-
 % Include an image with fixed width
-% (label for referencing = img:#1)
+% (label for referencing = fig:#1)
 % #1 Filename (without file ending relative to image-directory)
 % #2 Caption
 % #3 Width in document in cm
@@ -52,12 +51,12 @@
     ~\\[-0.25cm]
     \caption{#2}%
 %		~\\[-0.65cm]
-    \label{img:#1}%
+    \label{fig:#1}%
   \end{figure}%
 }
 
 % Include an image from PDF with fixed width
-% (label for referencing = img:#1)
+% (label for referencing = fig:#1)
 % #1 Filename (without file ending relative to image-directory)
 % #2 Caption
 % #3 Width in document in cm
@@ -69,7 +68,7 @@
 		~\\[-0.25cm]
 		\caption{#2}%
 		%		~\\[-0.65cm]
-		\label{img:#1}%
+		\label{fig:#1}%
 	\end{figure}%
 }
 
