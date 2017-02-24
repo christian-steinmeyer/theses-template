@@ -125,12 +125,14 @@
   \end{figure}
 }
 
+% Include a rotated image
+% (label for referencing = img:#1)
+% #1 Filename (without file ending relative to image-directory)
+% #2 Caption
 \providecommand{\rotatedImage}[2]{
   \begin{sidewaysfigure}
-	\begin{figure}
       \centering
       \includegraphics[scale=1, max height=\textwidth, max width=\textheight, \thedraft]{./images/#1}
-      \caption{#2} \label{fig:#1}
-	\end{figure}
+      \caption{#2} \label{img:#1}
   \end{sidewaysfigure}
 }
