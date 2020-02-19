@@ -1,8 +1,11 @@
-# Update
-There is an updated version of this template available at [this other repository](https://github.com/christian-steinmeyer/Latex-Paper-Template). It has more functionality and also an IEEE-ready version for IEEE submissions.
+# Updated Version
+There is an updated version of this template available at [this other repository](https://gitlab.com/christian-steinmeyer/latex-paper-template). It has more functionality and also an IEEE-ready version for IEEE submissions.
+
+---
+---
 
 
-# theses-template
+## Theses Template
 
 This template is based on 
 https://github.com/uniba-dsg/dsg-templates/tree/master/dsg-seminar-en
