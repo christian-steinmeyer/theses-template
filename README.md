@@ -1,3 +1,7 @@
+# Update
+There is an updated version of this template available at [this other repository](https://github.com/christian-steinmeyer/Latex-Paper-Template). It has more functionality and also an IEEE-ready version for IEEE submissions.
+
+
 # theses-template
 
 This template is based on 
