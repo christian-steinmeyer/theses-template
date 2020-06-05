@@ -1,5 +1,5 @@
 # Updated Version
-There is an updated version of this template available at [this other repository](https://gitlab.com/christian-steinmeyer/latex-paper-template). It has more functionality and also an IEEE-ready version for IEEE submissions.
+There is an updated version of this template available at [this other repository](https://gitlab.com/christian-steinmeyer/latex-research-paper-template). It has more functionality and also an targeted versions for certain publishers like IEEE.
 
 ---
 ---
